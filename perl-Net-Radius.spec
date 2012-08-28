@@ -17,6 +17,8 @@ BuildRequires:  perl(Test::Warn)
 BuildRequires:  perl(Digest::MD5)
 Requires:	perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 Requires:	perl(Digest::MD5)
+Provides:	perl(Net::Radius::Dictionary) = %{version}
+Provides:	perl(Net::Radius::Packet) = %{version}
 
 %{?perl_default_filter}
 
