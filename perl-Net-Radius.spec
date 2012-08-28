@@ -5,7 +5,7 @@ Release:	1%{?dist}
 Summary:	Object-oriented Perl interface to RADIUS
 
 Group:          Development/Libraries
-License:        Artistic/GPL
+License:        GPL+ or Artistic
 URL:            http://search.cpan.org/dist/Net-Radius/
 Source0:        http://search.cpan.org/CPAN/authors/id/L/LU/LUISMUNOZ/Net-Radius-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
