@@ -1,4 +1,4 @@
-%define		real_name Net-Radius
+%global		real_name Net-Radius
 Name:		perl-%{real_name}
 Version:	2.103
 Release:	1%{?dist}
@@ -7,7 +7,7 @@ Summary:	Object-oriented Perl interface to RADIUS
 Group:		Development/Libraries
 License:	GPL+ or Artistic
 URL:		http://search.cpan.org/dist/Net-Radius/
-Source0:	http://search.cpan.org/CPAN/authors/id/L/LU/LUISMUNOZ/Net-Radius-%{version}.tar.gz
+Source0:	http://search.cpan.org/CPAN/authors/id/L/LU/LUISMUNOZ/%{real_name}-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:	noarch
@@ -17,8 +17,6 @@ BuildRequires:	perl(Test::Warn)
 BuildRequires:	perl(Digest::MD5)
 Requires:	perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 Requires:	perl(Digest::MD5)
-Provides:	perl(Net::Radius::Dictionary) = %{version}
-Provides:	perl(Net::Radius::Packet) = %{version}
 
 %{?perl_default_filter}
 
