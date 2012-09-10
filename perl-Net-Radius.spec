@@ -4,17 +4,17 @@ Version:	2.103
 Release:	1%{?dist}
 Summary:	Object-oriented Perl interface to RADIUS
 
-Group:          Development/Libraries
-License:        GPL+ or Artistic
-URL:            http://search.cpan.org/dist/Net-Radius/
-Source0:        http://search.cpan.org/CPAN/authors/id/L/LU/LUISMUNOZ/Net-Radius-%{version}.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+Group:		Development/Libraries
+License:	GPL+ or Artistic
+URL:		http://search.cpan.org/dist/Net-Radius/
+Source0:	http://search.cpan.org/CPAN/authors/id/L/LU/LUISMUNOZ/Net-Radius-%{version}.tar.gz
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildArch:      noarch
-BuildRequires:  perl(ExtUtils::MakeMaker)
-BuildRequires:  perl(Test::More)
-BuildRequires:  perl(Test::Warn)
-BuildRequires:  perl(Digest::MD5)
+BuildArch:	noarch
+BuildRequires:	perl(ExtUtils::MakeMaker)
+BuildRequires:	perl(Test::More)
+BuildRequires:	perl(Test::Warn)
+BuildRequires:	perl(Digest::MD5)
 Requires:	perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 Requires:	perl(Digest::MD5)
 Provides:	perl(Net::Radius::Dictionary) = %{version}
@@ -61,5 +61,5 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Tue Aug 28 2012 Olivier Bilodeau <olivier@bottomlesspit.org> - 2.103-1
+* Mon Sep 10 2012 Olivier Bilodeau <olivier@bottomlesspit.org> - 2.103-1
 - Initial release.
