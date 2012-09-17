@@ -1,7 +1,7 @@
 %global		real_name Net-Radius
 Name:		perl-%{real_name}
 Version:	2.103
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Object-oriented Perl interface to RADIUS
 
 Group:		Development/Libraries
@@ -59,5 +59,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-* Mon Sep 10 2012 Olivier Bilodeau <olivier@bottomlesspit.org> - 2.103-1
+* Mon Sep 10 2012 Olivier Bilodeau <olivier@bottomlesspit.org> - 2.103-2
+- Implemented review recommandations
+
+* Tue Aug 28 2012 Olivier Bilodeau <olivier@bottomlesspit.org> - 2.103-1
 - Initial release.
